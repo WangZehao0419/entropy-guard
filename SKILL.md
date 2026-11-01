@@ -13,15 +13,17 @@ agent_created: true
 
 | 二级目录 | 覆盖任务 | 加载文件 |
 |---|---|---|
-| `references/code/` | 写代码、改代码、重构、代码审查、脚本与配置优化 | `references/code/code-style.md` |
+| `references/code/` | 写代码、改代码、重构、代码审查、脚本与配置优化 | `references/code/code-style.md`、`references/code/defensive-complexity.md` |
 | `references/write/` | 写文档、报告、文案、邮件、说明、README、总结，润色与改写文字 | `references/write/writing-style.md` |
+
+新增规则文件时同步补入本表；未列入的文件不会被加载。
 
 ## 路由步骤
 
 1. 判断本轮任务是否要产出代码或文字成品。纯问答、纯查询、只要结论不要成品时不加载任何文件，直接回答。
-2. 命中编码类：完整读取 `references/code/code-style.md`，按其中规则产出。
-3. 命中写作类：完整读取 `references/write/writing-style.md`，按其中规则产出。
-4. 同一轮既有代码又有正文（改代码并写变更说明、技术文档内嵌代码示例）：两个文件都读，代码走 code 规则，正文走 write 规则。
+2. 命中编码类：完整读取上表中 `references/code/` 列出的全部文件，按其中规则产出。
+3. 命中写作类：完整读取上表中 `references/write/` 列出的全部文件，按其中规则产出。
+4. 同一轮既有代码又有正文（改代码并写变更说明、技术文档内嵌代码示例）：两侧文件都读，代码走 code 规则，正文走 write 规则。
 5. 只读命中项。归属不清时按产物主体判定：主体是可直接运行的代码走 code，主体是给人读的段落走 write。
 
 ## 优先级
