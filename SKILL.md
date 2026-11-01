@@ -14,7 +14,7 @@ agent_created: true
 | 二级目录 | 覆盖任务 | 加载文件 |
 |---|---|---|
 | `references/code/` | 写代码、改代码、重构、代码审查、脚本与配置优化 | `references/code/code-style.md`、`references/code/defensive-complexity.md`、`references/code/error-handling.md` |
-| `references/write/` | 写文档、报告、文案、邮件、说明、README、总结，润色与改写文字 | `references/write/writing-style.md` |
+| `references/write/` | 写文档、报告、文案、邮件、说明、README、总结，润色与改写文字 | `references/write/writing-style.md`、`references/write/defensive-writing.md` |
 
 新增规则文件时同步补入本表；未列入的文件不会被加载。
 
