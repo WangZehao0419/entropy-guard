@@ -14,7 +14,7 @@ agent_created: true
 | 二级目录 | 覆盖任务 | 加载文件 |
 |---|---|---|
 | `references/code/` | 写代码、改代码、重构、代码审查、脚本与配置优化 | `references/code/code-style.md`、`references/code/defensive-complexity.md`、`references/code/error-handling.md` |
-| `references/write/` | 写文档、报告、文案、邮件、说明、README、总结，润色与改写文字 | `references/write/writing-style.md`、`references/write/defensive-writing.md` |
+| `references/write/` | 写文档、报告、文案、邮件、说明、README、总结，润色与改写文字 | `references/write/writing-style.md`、`references/write/defensive-writing.md`、`references/write/paper-revision.md` |
 
 新增规则文件时同步补入本表；未列入的文件不会被加载。
 
@@ -29,6 +29,8 @@ agent_created: true
 ## 优先级
 
 用户当轮显式要求（语言、框架、格式、篇幅、语气）> 对应目录下的规则 > 通用默认习惯。发生让步时，在交付里点明让的是哪一条。
+
+同一目录内多份规则对输出形式要求不一致时，按任务形态取更贴切的一份：从零写作按通用写作要求，改写既有稿件按改稿要求；其余规则仍照常遵守。
 
 ## 边界
 
